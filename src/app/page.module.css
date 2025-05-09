@@ -1,0 +1,122 @@
+.page {
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  align-items: center;
+  justify-items: center;
+  min-height: 100svh;
+  padding: 32px;
+  gap: 0px;
+  font-family: var(--font-geist-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  max-width: 60vw;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  grid-row-start: 2;
+}
+
+.main a {
+  color: hsl(204, 86%, 53%);
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+.main h2 {
+  font-size: 24pt;
+}
+
+.main p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.main code {
+  text-align: left;
+  display: block;
+  background-color: #f4f4f4;
+  white-space: pre-wrap;
+  padding: 2em;
+}
+
+.ctas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.ctas a {
+  appearance: none;
+  border-radius: 128px;
+  height: 42px;
+  padding: 0 20px;
+  border: none;
+  border: 1px solid transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 440;
+
+  background: var(--foreground);
+  color: var(--background);
+  gap: 8px;
+}
+
+.ctas a:hover {
+  background: var(--button-primary-hover);
+  border-color: transparent;
+}
+
+/* Enable hover only on non-touch devices */
+/* @media (hover: hover) and (pointer: fine) {
+  .a:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+} */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    align-items: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}
