@@ -23,7 +23,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1
           style={{
-            fontSize: "52px",
+            fontSize: "48px",
           }}
         >
           Virtualized 3D Gaussians (V3DG)
@@ -31,12 +31,11 @@ export default function Home() {
 
         <h2
           style={{
-            fontSize: "36px",
+            fontSize: "32px",
           }}
         >
-          Flexible Cluster-based Level-of-Detail System
-          <br />
-          for Real-Time Rendering of Composed Scenes
+          Flexible Cluster-based Level-of-Detail System for Real-Time Rendering
+          of Composed Scenes
         </h2>
 
         <p
@@ -49,7 +48,7 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "20px",
+            fontSize: "22px",
           }}
         >
           <a href="https://orcid.org/0009-0009-3076-2595">Xijie Yang</a>
@@ -63,14 +62,12 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "18px",
+            fontSize: "16px",
           }}
         >
           <sup>1</sup> Zhejiang University, <sup>2</sup> Shanghai Artificial
           Intelligence Laboratory, <sup>3</sup> The Chinese University of Hong
-          Kong,
-          <br />
-          <sup>4</sup> University of Science and Technology of China,{" "}
+          Kong, <sup>4</sup> University of Science and Technology of China,{" "}
           <sup>5</sup> The University of Hong Kong, <sup>6</sup> Feeling AI
         </p>
 
@@ -133,8 +130,8 @@ export default function Home() {
             Nanite
           </a>{" "}
           in Unreal Engine 5, V3DG processes detailed 3D assets into{" "}
-          <b>clusters at various granularities</b> offline, {/* <br /> */}
-          and <b>selectively renders</b> 3D Gaussians at runtime —flexibly{" "}
+          <b>clusters at various granularities</b> offline, and{" "}
+          <b>selectively renders</b> 3D Gaussians at runtime —flexibly{" "}
           <b>balancing rendering speed and visual fidelity</b> based on
           user-defined tolerances.
         </p>
@@ -150,16 +147,6 @@ export default function Home() {
             marginRight: "auto",
           }}
         ></video>
-
-        {/* <img
-          src="./static/teaser.jpeg"
-          alt="V3DG teaser"
-          style={{
-            width: "85%",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        /> */}
 
         <h2 style={{ paddingTop: Padding_Top }}>Framework</h2>
 
@@ -204,29 +191,6 @@ export default function Home() {
           <b>distills the appearance</b> of original 3D Gaussians layer by
           layer.
         </p>
-
-        {/* <h2 style={{ paddingTop: Padding_Top }}>Dataset</h2>
-
-        <img
-          src="./static/Dataset-consolidated.jpeg"
-          alt="V3DG dataset"
-          style={{
-            width: "90%",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        />
-
-        <p>
-          We further curate a dataset consisting of four <b>composed scenes</b>,
-          <br />
-          each requiring of <b>0.1 billion 3D Gaussians</b> to capture fine
-          details,
-          <br />
-          covering both synthetic and real-world data
-          <br />
-          to better evaluate our method and advance the field.
-        </p> */}
 
         <h2 style={{ paddingTop: Padding_Top }}>Results</h2>
 

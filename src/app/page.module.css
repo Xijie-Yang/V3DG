@@ -37,6 +37,12 @@
   grid-row-start: 2;
 }
 
+@media (max-width: 600px) {
+  .main {
+    max-width: 80vw;
+  }
+}
+
 .main a {
   color: hsl(204, 86%, 53%);
 }
@@ -52,7 +58,7 @@
 .main p {
   font-size: 18px;
   line-height: 1.8;
-  text-align: justify;
+  text-align: center;
   text-align-last: center;
 }
 
@@ -62,12 +68,22 @@
   background-color: #f4f4f4;
   white-space: pre-wrap;
   padding: 2em;
+  word-break: normal;
+}
+
+/* Dark mode override */
+@media (prefers-color-scheme: dark) {
+  .main code {
+    background-color: #1e1e1e; /* Dark mode background */
+    color: #f4f4f4; /* Optional: make text readable in dark mode */
+  }
 }
 
 .ctas {
   display: flex;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ctas a {
@@ -94,25 +110,6 @@
 .ctas a:hover {
   background: var(--button-primary-hover);
   border-color: transparent;
-}
-
-/* Enable hover only on non-touch devices */
-/* @media (hover: hover) and (pointer: fine) {
-  .a:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-} */
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
