@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { FaGithub, FaFilePdf } from "react-icons/fa";
+import { FaGithub, FaFilePdf, FaCity } from "react-icons/fa";
 import { SiArxiv } from "react-icons/si";
 
 const Text_Reference_ACM: string = `Xijie Yang, Linning Xu, Lihan Jiang, Dahua Lin, and Bo Dai. 2025. Virtualized 3D Gaussians: Flexible Cluster-based Level-of-Detail System for Real-Time Rendering of Composed Scenes. In Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers (SIGGRAPH Conference Papers ’25), August 10–14, 2025, Vancouver, BC, Canada. ACM, New York, NY, USA, 11 pages. https://doi.org/10.1145/3721238.3730602`;
@@ -76,7 +76,7 @@ export default function Home() {
 
         <div className={styles.ctas}>
           <a
-            href="https://city-super.github.io/V3DG/"
+            href="https://xijie-yang.github.io/V3DG/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -84,7 +84,7 @@ export default function Home() {
             arXiv
           </a>
           <a
-            href="https://city-super.github.io/V3DG/"
+            href="https://xijie-yang.github.io/V3DG/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -92,7 +92,7 @@ export default function Home() {
             Paper
           </a>
           {/* <a
-            href="https://city-super.github.io/V3DG/"
+            href="TODO"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -100,7 +100,7 @@ export default function Home() {
             ACM
           </a> */}
           {/* <a
-            href="https://city-super.github.io/V3DG/"
+            href="TODO"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -114,6 +114,14 @@ export default function Home() {
           >
             <FaGithub />
             Code
+          </a>
+          <a
+            href="https://city-super.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaCity />
+            CitySuper
           </a>
         </div>
 
