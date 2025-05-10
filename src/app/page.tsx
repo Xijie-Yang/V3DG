@@ -112,14 +112,6 @@ export default function Home() {
             <FaYoutube />
             Supplementary Video
           </a>
-          <a
-            href="https://city-super.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaCity />
-            CitySuper
-          </a>
         </div>
 
         <p>
@@ -260,6 +252,17 @@ export default function Home() {
         <pre>
           <code>{Text_Reference_BibTeX}</code>
         </pre>
+
+        <div className={styles.ctas}>
+          <a
+            href="https://city-super.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaCity />
+            CitySuper Projects
+          </a>
+        </div>
       </main>
     </div>
   );
