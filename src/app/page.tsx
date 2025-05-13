@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import { FaGithub, FaFilePdf, FaCity, FaYoutube } from "react-icons/fa";
+import { IoLibrary } from "react-icons/io5";
 import { SiArxiv } from "react-icons/si";
 
 const Text_Reference_ACM: string = `Xijie Yang, Linning Xu, Lihan Jiang, Dahua Lin, and Bo Dai. 2025. Virtualized 3D Gaussians: Flexible Cluster-based Level-of-Detail System for Real-Time Rendering of Composed Scenes. In Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers (SIGGRAPH Conference Papers ’25), August 10–14, 2025, Vancouver, BC, Canada. ACM, New York, NY, USA, 11 pages. https://doi.org/10.1145/3721238.3730602`;
@@ -73,7 +74,7 @@ export default function Home() {
 
         <div className={styles.ctas}>
           <a
-            href="https://xijie-yang.github.io/V3DG/"
+            href="https://arxiv.org/abs/2505.06523"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,7 +82,7 @@ export default function Home() {
             arXiv
           </a>
           <a
-            href="https://xijie-yang.github.io/V3DG/"
+            href="https://arxiv.org/pdf/2505.06523"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -89,7 +90,7 @@ export default function Home() {
             Paper
           </a>
           {/* <a
-            href="TODO"
+            href="https://doi.org/10.1145/3721238.3730602"
             target="_blank"
             rel="noopener noreferrer"
           >
