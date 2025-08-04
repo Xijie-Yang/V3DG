@@ -1,19 +1,26 @@
 import styles from "./page.module.css";
-import { FaGithub, FaFilePdf, FaCity, FaYoutube } from "react-icons/fa";
-// import { IoLibrary } from "react-icons/io5";
+
+import { FaGithub, FaCity, FaYoutube } from "react-icons/fa";
+import { IoLibrary } from "react-icons/io5";
 import { SiArxiv } from "react-icons/si";
+import { FaBilibili } from "react-icons/fa6";
 
-const Text_Reference_ACM: string = `Xijie Yang, Linning Xu, Lihan Jiang, Dahua Lin, and Bo Dai. 2025. Virtualized 3D Gaussians: Flexible Cluster-based Level-of-Detail System for Real-Time Rendering of Composed Scenes. In Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers (SIGGRAPH Conference Papers ’25), August 10–14, 2025, Vancouver, BC, Canada. ACM, New York, NY, USA, 11 pages. https://doi.org/10.1145/3721238.3730602`;
+const Text_Reference_ACM: string = `Xijie Yang, Linning Xu, Lihan Jiang, Dahua Lin, and Bo Dai. 2025. Virtualized 3D Gaussians: Flexible Cluster-based Level-of-Detail System for Real-Time Rendering of Composed Scenes. In Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers (SIGGRAPH Conference Papers '25). Association for Computing Machinery, New York, NY, USA, Article 100, 1–11. https://doi.org/10.1145/3721238.3730602`;
 
-const Text_Reference_BibTeX: string = `@inproceedings{Yang2025V3DG,
+const Text_Reference_BibTeX: string = `@inproceedings{V3DG,
     author = {Yang, Xijie and Xu, Linning and Jiang, Lihan and Lin, Dahua and Dai, Bo},
     title = {Virtualized 3D Gaussians: Flexible Cluster-based Level-of-Detail System for Real-Time Rendering of Composed Scenes},
-    booktitle = {ACM SIGGRAPH 2025 Conference Papers},
     year = {2025},
-    doi = {10.1145/3721238.3730602},
-    url = {https://doi.org/10.1145/3721238.3730602},
+    isbn = {9798400715402},
     publisher = {Association for Computing Machinery},
-    series = {SIGGRAPH '25}
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3721238.3730602},
+    doi = {10.1145/3721238.3730602},
+    booktitle = {Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
+    articleno = {100},
+    numpages = {11},
+    keywords = {3D Gaussians, Level-of-Detail, Real-Time Rendering, 3D Gaussian Splatting},
+    series = {SIGGRAPH Conference Papers '25}
 }`;
 
 const Padding_Top: string = "48px";
@@ -74,29 +81,21 @@ export default function Home() {
 
         <div className={styles.ctas}>
           <a
-            href="https://arxiv.org/abs/2505.06523"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiArxiv />
-            arXiv
-          </a>
-          <a
-            href="https://arxiv.org/pdf/2505.06523"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFilePdf />
-            Paper
-          </a>
-          {/* <a
             href="https://doi.org/10.1145/3721238.3730602"
             target="_blank"
             rel="noopener noreferrer"
           >
             <IoLibrary />
-            ACM
-          </a> */}
+            Paper (publisher)
+          </a>
+          <a
+            href="https://arxiv.org/abs/2505.06523"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiArxiv />
+            Paper (arXiv)
+          </a>
           <a
             href="https://github.com/city-super/V3DG"
             target="_blank"
@@ -105,13 +104,23 @@ export default function Home() {
             <FaGithub />
             Code
           </a>
+        </div>
+        <div className={styles.ctas}>
           <a
-            href="https://youtu.be/K0J5ePcWyrg"
+            href="https://youtu.be/eUk1GUwV6tM"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaYoutube />
-            Supplementary Video
+            Fast Forward Video (20 s)
+          </a>
+          <a
+            href="https://youtu.be/o-rRytQTnK4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube />
+            Introduction Video (8 min)
           </a>
         </div>
 
@@ -255,6 +264,24 @@ export default function Home() {
         </pre>
 
         <div className={styles.ctas}>
+          <a
+            href="https://youtu.be/K0J5ePcWyrg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube />
+            Supplementary Video
+          </a>
+
+          <a
+            href="https://www.bilibili.com/video/BV1jahLzvEih/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaBilibili />
+            Introduction Video (Chinese, 8 min)
+          </a>
+
           <a
             href="https://city-super.github.io"
             target="_blank"
